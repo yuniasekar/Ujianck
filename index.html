@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CERKAK</title>
+  <style>
+    /* Reset */
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #0d0d0d;
+  color: #f5f5f5;
+}
+
+/* Cover Majalah */
+.cover {
+  background: linear-gradient(135deg, #ff00cc, #3333ff);
+  text-align: center;
+  padding: 80px 20px;
+}
+.title {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 3px 3px #000;
+}
+.subtitle {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #ffeb3b;
+}
+
+/* Layout ala majalah */
+.magazine-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 40px;
+}
+.feature {
+  background: #1a1a1a;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(255,255,255,0.1);
+  transition: transform 0.3s ease;
+}
+.feature:hover {
+  transform: rotate(-2deg) scale(1.05);
+}
+.feature h2 {
+  color: #00e5ff;
+  margin-bottom: 15px;
+}
+.feature img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.feature p {
+  color: #ccc;
+  font-size: 1rem;
+}
+
+/* Komentar ala chat bubble */
+.comments {
+  background: #111;
+  padding: 40px;
+  text-align: center;
+}
+.comments h2 {
+  color: #ff4081;
+  margin-bottom: 20px;
+}
+.comment-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.comment-form input,
+.comment-form textarea {
+  background: #222;
+  border: none;
+  border-radius: 20px;
+  padding: 15px;
+  color: #fff;
+  font-size: 1rem;
+  box-shadow: inset 0 0 10px rgba(255,255,255,0.1);
+}
+.comment-form textarea {
+  resize: none;
+}
+.comment-form button {
+  background: linear-gradient(135deg, #00e5ff, #ff4081);
+  border: none;
+  padding: 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  transition: 0.3s;
+}
+.comment-form button:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: #888;
+  text-align: center;
+  padding: 20px;
+}
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cover Majalah -->
+  <header class="cover">
+    <h2 class="title">Payung ing warung kosong</h2>
+    <p class="subtitle">Cerkak & Poster Edisi Kreatif 🌟</p>
+  </header>
+
+  <!-- Layout ala majalah -->
+  <main class="magazine-layout">
+    <section class="feature cerkak">
+      <h2>Cerkak</h2>
+      <img src="payung.png" alt="Poster Cerkak">
+          <p><span class="dropcap">I</span>ng desa Sisanggrahan, ana bocah enom jenenge Riko. Wongé pendiam lan luwih seneng lungguh ing teras omah karo radio lawasé tinimbang dolan. Bapake kerja dadi sopir truk luar kota, ibune dagang sayur cilik-cilikan. Uripé ora mewah, nanging cukup kanggo nyambung urip.
+</p>
+
+    <p>Sakwise mlebu SMA, Riko dadi kerep kesel pikiran. Tugas akeh, kancane padha sibuk karo dununge dhewe-dhewe, lan omahé kerep sepi merga bapak-ibune padha sibuk. Ing wektu kaya ngono, Riko ketemu Jono, bocah kelas loro sing wis dikenal “nakal alus”. Jono kerep ngajak ngopi ing warung kosong cedhak lapangan, panggonan sing wis suwe ora digunakake.</p>
+
+    <p>“Rik, iki ora bahaya nek mung dicoba setitik wae. Rasane enteng, pikiranmu iso plong,” ujare Jono, alon nanging nggoda.</p>
+
+    <p>Riko meneng. Atine goyah, pikirane mumet. Rasane kaya ana sing nyeret supaya nyoba. Nanging nalika Jono bakal ngedum bubuk kuwi, Riko kelingan payung biru sing biasane digawa ibune saben dina. Ibune kerep ngomong,
+>Riko ngadeg, napasé gemeter.</p>
+<p>Riko ngadeg, napasé gemeter.
+“Jon… aku ora gelem. Iki dudu jalanku,” ujare pelan.
+
+Jono ngguyu meremehkan, “Cilik atimu, Rik.”
+Nanging Riko ora peduli. Dheweke lunga saka warung kosong kuwi kanthi langkah gontai nanging lega.</p>
+<p>Esuke, Riko crita marang Bu Lilis, guru sing paling disenengine. Bu Lilis ora nesu, malah mbiyantu ngasih pengarahan lan njaluk konseling sekolah kanggo ngawasi Riko supaya ora ketarik maneh.
+
+Lan sejatine, Riko ora isin. Dheweke malah luwih yakin karo pilihane. Saben liwat warung kosong kuwi, Riko mung nyawang sebentar lan ngelus dada, bungah amarga ora keseret mlebu dalan peteng.
+
+Kaya payung ibune, keputusané bengi kuwi wis njaga uripé tetep wutuh.</p><hr>
+    </section>
+
+    <section class="feature poster">
+      <h2>Poster</h2>
+      <img src="cerkak.png" alt="Poster Edukatif">
+    </section>
+  </main>
+
+  <!-- Komentar ala chat bubble -->
+  <section class="comments">
+    <h2>Komentar Pembaca 💬</h2>
+    <form method="POST" class="comment-form">
+      <input type="text" name="nama" placeholder="Nama kamu..." required>
+      <textarea name="komentar" placeholder="Tulis komentar di sini..." required></textarea>
+      <button type="submit">Kirim 🚀</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p><i>&copy; Yunia_sekar_sari</i></p>
+  </footer>
+</body>
+  </html>
